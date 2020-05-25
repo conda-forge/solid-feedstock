@@ -1,5 +1,5 @@
 {% set name = "solid" %}
-{% set version = "5.69.0" %}
+{% set version = "5.70.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/solid-{{ version }}.tar.xz
-  sha256: 0a033cb7dc0a8040a0e2fa31acfee62251033c98af93a3abe3e45e967a0697b0
+  sha256: e76b0f2d64853dcfa7e5887e9733d4e9821bba6e68e62f3488b21b1ed979962a
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
     - make
-    - extra-cmake-modules
+    - extra-cmake-modules >={{ version }}
     - {{ cdt('libudev') }}  # [linux]
     - {{ cdt('libudev-devel') }}  # [linux]
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
