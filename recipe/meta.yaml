@@ -1,5 +1,5 @@
 {% set name = "solid" %}
-{% set version = "5.71.0" %}
+{% set version = "5.72.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/solid-{{ version }}.tar.xz
-  sha256: 72a7bdd8306ec4cda5f504819e0ff3f8baca6530fa04e33f10b6b89dc010505b
+  sha256: d3228ac90f0aa203340cac1bc0c0fd1d2c77b6c94a811d52409d8608d1477e9f
 
 build:
   number: 0
