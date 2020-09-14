@@ -1,5 +1,5 @@
 {% set name = "solid" %}
-{% set version = "5.73.0" %}
+{% set version = "5.74.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/solid-{{ version }}.tar.xz
-  sha256: 7366b64438a1ca7a42126e67d352e371227b46418ce961321d358f2eb90c0933
+  sha256: 70e2356267ed1fdd3a13cd729d91c622aad1ea68a51e1172b0ed9db2468cd4e6
 
 build:
   number: 0
@@ -43,9 +43,14 @@ test:
 
 about:
   home: https://api.kde.org/frameworks/solid/html/index.html
-  license: LGPL-v2.1-or-later
-  license_family: GPL
-  license_file: COPYING.LIB
+  license: BSD-3-Clause AND LGPL-2.0-only AND LGPL-2.1-only AND LGPL-2.1-or-later AND LGPL-3.0-only AND LicenseRef-KDE-Accepted-LGPL
+  license_file:
+    - LICENSES/BSD-3-Clause.txt
+    - LICENSES/LGPL-2.0-only.txt
+    - LICENSES/LGPL-2.1-only.txt
+    - LICENSES/LGPL-2.1-or-later.txt
+    - LICENSES/LGPL-3.0-only.txt
+    - LICENSES/LicenseRef-KDE-Accepted-LGPL.txt
   summary: Desktop hardware abstraction
   description: |
     Solid is a device integration framework. It provides a way of querying
