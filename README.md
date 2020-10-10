@@ -3,11 +3,13 @@ About solid
 
 Home: https://api.kde.org/frameworks/solid/html/index.html
 
-Package license: LGPL-v2.1-or-later
+Package license: BSD-3-Clause AND LGPL-2.0-only AND LGPL-2.1-only AND LGPL-2.1-or-later AND LGPL-3.0-only AND LicenseRef-KDE-Accepted-LGPL
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/solid-feedstock/blob/master/LICENSE.txt)
 
 Summary: Desktop hardware abstraction
+
+Development: https://cgit.kde.org/solid.git/tree
 
 Solid is a device integration framework. It provides a way of querying
 and interacting with hardware independently of the underlying operating system.
@@ -31,10 +33,10 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64</td>
+              <td>linux_64_c_compiler_version7cxx_compiler_version7</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8497&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/solid-feedstock?branchName=master&jobName=linux&configuration=linux_64_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/solid-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version7cxx_compiler_version7" alt="variant">
                 </a>
               </td>
             </tr>
